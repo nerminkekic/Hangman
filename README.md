@@ -1,0 +1,1 @@
+This is Hangman game writen in Python.
