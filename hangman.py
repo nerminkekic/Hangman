@@ -35,6 +35,7 @@ print("To guess the word, you must provide letter that is part of the word.")
 
 
 while guess_count < 6:
+    letter_found = False
     # Get the letter from player
     player_guess = input("To proceed, enter letter that is part of the word: ")
     player_guess = player_guess.lower()
@@ -46,10 +47,15 @@ while guess_count < 6:
     # Check if the display has no dash, means the word has been guessed player has won
     if display_dash.count("_") == 0:
         print("You WON!!! Good job, you guessed the word correctly!")
+        print(*display_dash, sep=" ")
         break
-
-    if not letter_found:
+    elif not letter_found:
+        print("You have entered letter that does not exist in the word.")
         guess_count += 1
-        letter_found = False
-    print(display_dash)
+        if guess_count == 6:
+            print("You have used all your guesses, better luck next time!")
+            print(f"You have guessed: {' '.join(display_dash)}")
+            print(f"Correct word is: {' '.join(word)}")
+        continue
+    print(*display_dash, sep=" ")
 
