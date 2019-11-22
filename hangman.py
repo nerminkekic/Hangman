@@ -4,8 +4,22 @@
 
 import random
 
+# Instruction for player
+rules_for_player = """
+        ################################################################################################
+        #   Welcome to Hangman game!                                                                   #
+        #   The rules of the game are as fallowng:                                                     #
+        #       1. To win you must guess the secret word correctly.                                    #
+        #       2. You will be given chance to enter one letter at the time.                           #
+        #       3. Two or more letters entered, will count as wrong asnwer.                            #
+        #       4. You have 6 chances to guess wrong, before game ends.                                #
+        #       5. If you guess the word incorrect, game will subtract 1 point from 6 trys.            # 
+        #       6. If you guess the word correctly, you will be able to continue without penalty.      #
+        # ##############################################################################################
+        """
+
 # Create a list of words for user to guess
-word_list = ["Nermin"]
+word_list = ["Nermin", "Sanja", "Nusret", "Fikra", "Zenaida", "Amira"]
 # Shuffle the list each time the scrip is run
 random.shuffle(word_list)
 # Variable to track guesses
@@ -25,14 +39,11 @@ display_dash = []
 for i in range(len(word)):
     display_dash.append("_")
 
-
+# Disply instructions for player
+print(rules_for_player)
 # Display dash instead of the word
+print("The secret word is:")
 print(*display_dash, sep=" ")
-
-print("You have 6 chances to guess correctly the word.")
-print("The word is hiden by dashes.")
-print("To guess the word, you must provide letter that is part of the word.")
-
 
 while guess_count < 6:
     letter_found = False
