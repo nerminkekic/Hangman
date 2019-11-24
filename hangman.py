@@ -15,7 +15,7 @@ rules_for_player = """
         #       4. You have 6 chances to guess wrong, before game ends.                                #
         #       5. If you guess the word incorrect, game will subtract 1 point from 6 trys.            # 
         #       6. If you guess the word correctly, you will be able to continue without penalty.      #
-        # ##############################################################################################
+        ################################################################################################
         """
 
 # Create a list of words for user to guess
@@ -68,5 +68,6 @@ while guess_count < 6:
             print(f"You have guessed: {' '.join(display_dash)}")
             print(f"Correct word is: {' '.join(word)}")
         continue
+    
     print(*display_dash, sep=" ")
 
