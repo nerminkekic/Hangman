@@ -15,5 +15,4 @@
     I wanted to write this game to test my skills with the python.
     It was very fun project for me and i enjoyed working on it.
     Inthe future, I would like to expend this project by getting away from 
-    
     command line and using graphics library like tk. 
