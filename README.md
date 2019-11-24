@@ -12,4 +12,8 @@
     2. Download file hangman.py and run it. 
 
 ##  About this project  
-    I wanted to write this game to test my skills with the python. It was very fun project for me and i enjoyed working on it. I would like to expend this project by getting away from command line and using graphics library like tk. 
+    I wanted to write this game to test my skills with the python.
+    It was very fun project for me and i enjoyed working on it.
+    Inthe future, I would like to expend this project by getting away from 
+    
+    command line and using graphics library like tk. 
