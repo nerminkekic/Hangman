@@ -71,3 +71,4 @@ while guess_count < 6:
     
     print(*display_dash, sep=" ")
 
+wait = input("Press ENTER to end game.")
